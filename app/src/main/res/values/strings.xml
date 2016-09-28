@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FlexyStepIndicator</string>
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="step_3">Step 3</string>
+    <string name="step_4">Step 4</string>
+    <string name="all_done">All Done</string>
+</resources>

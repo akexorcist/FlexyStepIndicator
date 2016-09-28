@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlexyStepIndicator">
+        <attr name="flexy_descriptionTextColor" format="reference" />
+        <attr name="flexy_descriptionTextSize" format="dimension" />
+        <attr name="flexy_numberBackgroundDrawable" format="reference" />
+        <attr name="flexy_numberTextSize" format="dimension" />
+        <attr name="flexy_numberSize" format="dimension" />
+        <attr name="flexy_numberTextColor" format="reference" />
+        <attr name="flexy_doneIconDrawable" format="reference" />
+        <attr name="flexy_doneBackgroundDrawable" format="reference" />
+        <attr name="flexy_lineHeight" format="dimension" />
+        <attr name="flexy_lineLength" format="dimension" />
+        <attr name="flexy_lineDashCount" format="integer" />
+        <attr name="flexy_lineActiveColor" format="color" />
+        <attr name="flexy_lineInactiveColor" format="color" />
+    </declare-styleable>
+
+</resources>
