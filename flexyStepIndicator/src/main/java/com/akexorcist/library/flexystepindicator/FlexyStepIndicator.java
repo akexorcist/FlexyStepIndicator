@@ -518,7 +518,13 @@ public class FlexyStepIndicator extends LinearLayout implements View.OnClickList
 
         // Description Text View
         TextView tvDescription = (TextView) view.findViewById(R.id.flexy_step_indicator_tv_description);
-        tvDescription.setText(getDescriptionText(index));
+        String description = getDescriptionText(index);
+        if (description != null) {
+            tvDescription.setText(description);
+            tvDescription.setVisibility(View.VISIBLE);
+        } else {
+            tvDescription.setVisibility(View.INVISIBLE);
+        }
         tvDescription.setTextSize(TypedValue.COMPLEX_UNIT_PX, descriptionTextSize);
         if (descriptionTextColor != -1) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
