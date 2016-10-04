@@ -789,21 +789,27 @@ public class FlexyStepIndicator extends LinearLayout implements View.OnClickList
         }
 
         private String[] saveDescriptionStringList(List<String> descriptionStringList) {
-            String[] descriptionStrings = new String[descriptionStringList.size()];
-            for (int index = 0; index < descriptionStringList.size(); index++) {
-                String descriptionString = descriptionStringList.get(index);
-                descriptionStrings[index] = descriptionString;
+            if( descriptionStringList != null ){
+                String[] descriptionStrings = new String[descriptionStringList.size()];
+                for (int index = 0; index < descriptionStringList.size(); index++) {
+                    String descriptionString = descriptionStringList.get(index);
+                    descriptionStrings[index] = descriptionString;
+                }
+                return descriptionStrings;
             }
-            return descriptionStrings;
+            return null;
         }
 
         private int[] saveDescriptionResIdList(List<Integer> descriptionResIdList) {
-            int[] descriptionResIds = new int[descriptionResIdList.size()];
-            for (int index = 0; index < descriptionResIdList.size(); index++) {
-                Integer descriptionResId = descriptionResIdList.get(index);
-                descriptionResIds[index] = descriptionResId;
+            if( descriptionResIdList != null ){
+                int[] descriptionResIds = new int[descriptionResIdList.size()];
+                for (int index = 0; index < descriptionResIdList.size(); index++) {
+                    Integer descriptionResId = descriptionResIdList.get(index);
+                    descriptionResIds[index] = descriptionResId;
+                }
+                return descriptionResIds;
             }
-            return descriptionResIds;
+            return null;
         }
 
         public static final Creator<SavedState> CREATOR = new Creator<SavedState>() {
